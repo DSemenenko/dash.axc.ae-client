@@ -15,7 +15,7 @@ const Loop = () => {
   
     const salesRef = useRef([]);
     
-    const socket = io("*")
+    const socket = io("http://dash.axc.ae/")
     
     // useEffect(() => {
       

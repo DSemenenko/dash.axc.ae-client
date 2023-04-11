@@ -37,7 +37,7 @@ ChartJS.register(
 
 const Board = () => {
     
-    const socket = io("*")
+    const socket = io("http://dash.axc.ae/")
     const [chartData, setChartData] = useState({})
     const [board, setBoard] = useState([])
 
