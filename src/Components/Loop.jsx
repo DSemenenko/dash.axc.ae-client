@@ -15,7 +15,7 @@ const Loop = () => {
   
     const salesRef = useRef([]);
     
-    const socket = io("http://localhost:3000/")
+    const socket = io("*")
     
     // useEffect(() => {
       
