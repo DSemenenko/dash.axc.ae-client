@@ -15,7 +15,7 @@ const Loop = () => {
   
     const salesRef = useRef([]);
     
-    const socket = io("http://dash.axc.ae/")
+    const socket = io("http://localhost:3000/")
     
     // useEffect(() => {
       
