@@ -15,8 +15,26 @@ const Loop = () => {
   
     const salesRef = useRef([]);
     
-    const socket = io("http://dash.axc.ae")
+    const socket = io("http://localhost:3000/")
     
+    // useEffect(() => {
+      
+    //   // socket.on('data', (data) => {
+    //   //   console.log('data')
+    //   // })
+    // })
+  
+    // socket.on("connect", () => {
+    //   console.log("connected")
+    // })
+
+    // socket.on('data', (data) => {
+    //   console.log(data)
+    // })
+
+    // socket.on("disconnect", () => {
+    //   console.log('disconnected', socket.id); // undefined
+    // });
      
     useEffect(() => {
       socket.on('connect', () => {
