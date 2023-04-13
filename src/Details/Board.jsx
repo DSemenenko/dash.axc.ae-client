@@ -54,7 +54,7 @@ const Board = () => {
             
 
             socket.on("disconnect", () => {
-                console.log("Disconnected from server");
+                console.log("Disconnected from server!");
             });
         } catch (error) {
             throw error
