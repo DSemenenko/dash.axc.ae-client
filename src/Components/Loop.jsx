@@ -7,6 +7,7 @@ import Header from '../Components/Header'
 
 import { TweenMax, Power3 } from 'gsap';
 
+const socket = io("http://localhost:3000/")
 const Loop = () => {
     const [boardData, setBoard] = useState([])
     const[sales, setSales] = useState([null])
@@ -15,7 +16,6 @@ const Loop = () => {
   
     const salesRef = useRef([]);
     
-    const socket = io("http://localhost:3000/")
     
     // useEffect(() => {
       
