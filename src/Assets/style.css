@@ -22,7 +22,7 @@ header{
 }
 .chartboard h4, .chartboard h3{
     color: #a6a6a7;
-    font-size: 16px;
+    font-size: 26px;
 }
 .chartboard h3:last-child {
     color: #df8d6b;
@@ -31,7 +31,7 @@ header{
     text-align: left;
     color: #cecccf;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 26px;
 }
 .card-header p{
     font-size: 3rem;
@@ -71,9 +71,11 @@ header{
 }
 .grid-chart .chart-item p{
     display: inline-block;
-    font-size: 32px;
+    font-size: 44px;
     font-weight: 700;
-    color: #d4d4d4;
+    background: -webkit-linear-gradient(#925f48, #e8c8b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0 0 0 1.6rem!important;
     vertical-align: middle;
 }
@@ -190,7 +192,7 @@ header{
     margin: 0 auto;
 }
 .timing {
-    font-size: 28px;
+    font-size: 36px;
     color: #fff;
     font-family: 'Montserrat';
     margin-bottom: 5px;
@@ -265,8 +267,8 @@ body{
     left: 0;
     right: 0;
     color: #fff;
-    top: 20px;
-    font-size: 16px;
+    top: 0px;
+    font-size: 26px;
   }
 
   .grid-custom{

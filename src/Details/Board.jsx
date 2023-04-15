@@ -161,18 +161,6 @@ const Board = () => {
                                     </div>
                                 </div>
                                 <div className="chart-item">
-                                    <div className="card-header">MARKET SHARE/GOAL - 25%</div>
-                                    <div className="card-body">
-                                        <div className="img-card">
-                                            <img src={marketSvg} alt="" />
-                                        </div>
-                                        <p>{data.marketshare}%</p>
-                                        <div className="content">
-                                            <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="chart-item">
                                     <div className="card-header">Total LEAD so far</div>
                                     <div className="card-body">
                                         <div className="img-card">
@@ -184,6 +172,19 @@ const Board = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="chart-item">
+                                    <div className="card-header">MARKET SHARE/GOAL - 25%</div>
+                                    <div className="card-body">
+                                        <div className="img-card">
+                                            <img src={marketSvg} alt="" />
+                                        </div>
+                                        <p>{data.marketshare}%</p>
+                                        <div className="content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <div className="chart-item">
                                     <div className="card-header">DLD Transactions, February 2023</div>
                                     <div className="card-body">

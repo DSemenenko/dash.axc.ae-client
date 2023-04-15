@@ -30,7 +30,7 @@ const Timing = (props) => {
                             <h3>{today.format('ddd MMM DD YYYY')}</h3>
                             <p className='timing'>{today.format('LT')}</p>
                         </div>
-                        <h3>Dubai</h3>
+                        <h3>DUBAI</h3>
                     </div>
                 </div>
                 <div className="col-md-2">

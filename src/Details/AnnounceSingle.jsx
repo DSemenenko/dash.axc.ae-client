@@ -15,7 +15,7 @@ const AnnounceSingle = ({props}) => {
             <div className="container-fluid">
             {/* grid-custom */}
                 <div className="row"> 
-                    <div className="col-md-7">
+                    <div className="col-md-6 offset-md-1">
                         <div className="h-100 d-flex align-items-center">
                             <div className="context">
                                 <p className="upper">Agent and Deal Type:</p>
