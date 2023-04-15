@@ -7,7 +7,7 @@ import Header from '../Components/Header'
 
 import { TweenMax, Power3 } from 'gsap';
 
-const socket = io("http://localhost:3000/")
+const socket = io("https://dash.axc.ae/")
 const Loop = () => {
     const [boardData, setBoard] = useState([])
     const[sales, setSales] = useState([null])
