@@ -12,9 +12,10 @@ const AnnounceSingle = ({props}) => {
 
     return <>
         <div className="announcesingle">
-            <div className="container">
-                <div className="row grid-custom">
-                    <div className="">
+            <div className="container-fluid">
+            {/* grid-custom */}
+                <div className="row"> 
+                    <div className="col-md-7">
                         <div className="h-100 d-flex align-items-center">
                             <div className="context">
                                 <p className="upper">Agent and Deal Type:</p>
@@ -30,7 +31,7 @@ const AnnounceSingle = ({props}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="col-md-5">
                         <div className="banner">
                             <div className="img" 
                                 style={{
