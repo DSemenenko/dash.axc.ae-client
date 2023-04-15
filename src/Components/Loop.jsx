@@ -77,7 +77,7 @@ const Loop = () => {
       } else {
         navigateAndReload('/1');
       }
-    }, 20000000);
+    }, 20000);
 
     
   
