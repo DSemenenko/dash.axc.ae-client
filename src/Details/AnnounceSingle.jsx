@@ -26,7 +26,7 @@ const AnnounceSingle = ({props}) => {
                                 <h3>{props.Developer} - {props.Project}</h3>
                                 <p className="sub-title price">AED {Amount}</p>
                                 <hr />
-                                <p className="upper">Join me in congratulating</p>
+                                <p className="upper">Congratulation</p>
                                 <p className="sub-title">{props.Content}</p>
                             </div>
                         </div>

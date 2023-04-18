@@ -158,7 +158,7 @@ const Board = () => {
                                     
                                 </div>
                                 <div className="chart-item">
-                                    <div className="card-header">Total SALES this month</div>
+                                    <div className="card-header">Total SALES value this month</div>
                                     <div className="card-body">
                                         <div className="img-card">
                                             <img src={dldSvg} alt="" />
