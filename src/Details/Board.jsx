@@ -22,6 +22,8 @@ import Meter from "../Components/Meter"
 import DoughnutComponent from "../Components/Doughnut"
 //import DoughnutChart from "./Test"
 //import Time from "./Time"
+
+import moment from 'moment-timezone';
 import Timing from "../Components/Timing"
 const numeral = require('numeral');
 
@@ -40,7 +42,14 @@ const Board = () => {
     const socket = io("https://dash.axc.ae/")
     const [chartData, setChartData] = useState({})
     const [board, setBoard] = useState([])
+    const [currentMonth, setcurrentMonth] = useState(moment());
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setcurrentMonth(moment());
+        }, 1000);
+        return () => clearInterval(intervalId);
+      }, []);
     
     useEffect(() => {
         try {
@@ -186,7 +195,7 @@ const Board = () => {
                                 </div>
                                 
                                 <div className="chart-item">
-                                    <div className="card-header">DLD Transactions, February 2023</div>
+                                    <div className="card-header">DLD Transactions, {currentMonth.format('MMMM YYYY')}</div>
                                     <div className="card-body">
                                         <div className="img-card">
                                             <img src={dldSvg} alt="" />
@@ -198,7 +207,7 @@ const Board = () => {
                                     </div>
                                 </div>
                                 <div className="chart-item">
-                                    <div className="card-header">DLD Sales (AED),February,2023</div>
+                                    <div className="card-header">DLD Sales (AED), {currentMonth.format('MMMM YYYY')}</div>
                                     <div className="card-body">
                                         <div className="img-card">
                                             <img src={dldSvg} alt="" />
