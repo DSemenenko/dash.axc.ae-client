@@ -79,16 +79,17 @@ const DoughnutComponent = (props) => {
     
 
     let str_current;
-
-    if (currentm <= 10000000) {
-      str_current = String(currentm).slice(0, 2)  + 'M'
-    } else if (currentm >= 100000000) {
-      str_current = String(currentm).slice(0, 3)  + 'M'  
-    } else {
-      str_current = String(currentm).slice(0, 1) + 'B'  
-    }
-
     
+    const formula = currentm / 1000000;
+    if (formula >= 1000) {
+      str_current = currentm / 1000000000 + 'B'
+    } else if (formula < 1000){
+      str_current = formula + 'M'
+    } else {
+      return;
+    }
+    
+
       const gaugeText = {
         id: 'gaugeText',
         beforeDatasetsDraw(chart, args, pluginOptions){
