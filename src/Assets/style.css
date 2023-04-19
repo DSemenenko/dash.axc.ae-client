@@ -275,3 +275,4 @@ body{
     display: grid;
     grid-template-columns: 60% 40%;
   }
+  .deal-type{font-size: 28px!important;}

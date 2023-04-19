@@ -20,13 +20,13 @@ const AnnounceSingle = ({props}) => {
                             <div className="context">
                                 <p className="upper">Agent and Deal Type:</p>
                                 <h3>{props.Agent}</h3>
-                                <p className="sub-title">{props.DealType}</p>
+                                <p className="sub-title deal-type">{props.DealType}</p>
                                 <hr />
                                 <p className="upper">Developer, Project and Amount:</p>
                                 <h3>{props.Developer} - {props.Project}</h3>
                                 <p className="sub-title price">AED {Amount}</p>
                                 <hr />
-                                <p className="upper">Congratulation</p>
+                                <p className="upper">Congratulations</p>
                                 <p className="sub-title">{props.Content}</p>
                             </div>
                         </div>

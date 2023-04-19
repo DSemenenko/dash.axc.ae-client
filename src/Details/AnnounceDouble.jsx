@@ -29,13 +29,13 @@ const AnnounceDouble = (data) => {
                             <div className="context text-center">
                                 <p className="upper">Deal Type:</p>
                                 {/* <h3>David Semenenko</h3> */}
-                                <p className="sub-title">{data.DealType}</p>
+                                <p className="sub-title deal-type">{data.DealType}</p>
                                 <hr />
                                 <p className="upper">Developer, Project and Amount:</p>
                                 <h3>{data.Developer} {data.Project}</h3>
                                 <p className="sub-title price">AED {Amount}</p>
                                 <hr />
-                                <p className="upper">Congratulation</p>
+                                <p className="upper">Congratulations</p>
                                 <p className="sub-title">{data.Content}</p>
                             </div>
                         </div>
