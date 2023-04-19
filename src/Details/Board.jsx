@@ -16,6 +16,8 @@ import dealSvg from '../Assets/images/deal.svg'
 import marketSvg from '../Assets/images/market.svg'
 import leadSvg from '../Assets/images/lead.svg'
 import dldSvg from '../Assets/images/dld.svg'
+import land from '../Assets/images/land.svg'
+import sales from '../Assets/images/sales.svg'
 import Date from "../Components/Date";
 //import Radar from "./Radar";
 import Meter from "../Components/Meter"
@@ -161,7 +163,7 @@ const Board = () => {
                                     <div className="card-header">Total SALES value this month</div>
                                     <div className="card-body">
                                         <div className="img-card">
-                                            <img src={dldSvg} alt="" />
+                                            <img src={sales} alt="" />
                                         </div>
                                         <p>{totalsales}</p>
                                         <div className="content">
@@ -210,7 +212,7 @@ const Board = () => {
                                     <div className="card-header">DLD Sales (AED), {currentMonth.format('MMMM YYYY')}</div>
                                     <div className="card-body">
                                         <div className="img-card">
-                                            <img src={dldSvg} alt="" />
+                                            <img src={land} alt="" />
                                         </div>
                                         <p>{dldSales}</p>
                                         <div className="content">
