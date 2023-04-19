@@ -84,7 +84,9 @@ const DoughnutComponent = (props) => {
     if (formula >= 1000) {
       str_current = currentm / 1000000000 + 'B'
     } else if (formula < 1000){
-      str_current = formula + 'M'
+      
+      str_current = Math.trunc(formula) + 'M'
+      console.log(str_current)
     } else {
       return;
     }
