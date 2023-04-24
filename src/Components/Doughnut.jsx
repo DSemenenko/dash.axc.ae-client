@@ -83,7 +83,7 @@ const DoughnutComponent = (props) => {
     const formula = currentm / 1000000;
     if (formula >= 1000) {
       str_current = currentm / 1000000000
-      str_current = str_current.toFixed(1) + 'B';
+      str_current = str_current.toFixed(2) + 'B';
       console.log(str_current); // выведет "1.0"
     } else if (formula < 1000){
       
