@@ -82,15 +82,18 @@ const DoughnutComponent = (props) => {
     
     const formula = currentm / 1000000;
     if (formula >= 1000) {
-      str_current = currentm / 1000000000 + 'B'
+      str_current = currentm / 1000000000
+      str_current = str_current.toFixed(1) + 'B';
+      console.log(str_current); // выведет "1.0"
     } else if (formula < 1000){
       
       str_current = Math.trunc(formula) + 'M'
-      console.log(str_current)
+      
     } else {
       return;
     }
-    
+    console.log(str_current)
+    let x = 1.80203649;
 
       const gaugeText = {
         id: 'gaugeText',
