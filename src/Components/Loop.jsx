@@ -76,9 +76,7 @@ const Loop = () => {
         navigateAndReload('/7');
       } else if (location.pathname === '/7') {
         navigateAndReload('/8');
-      } else if (location.pathname === '/8') {
-        navigateAndReload('/9');
-      }else {
+      } else {
         navigateAndReload('/1');
       }
     }, 20000);
@@ -100,8 +98,8 @@ const Loop = () => {
         <Route exact path="/5" element={<PageFive props={sales[4]} />} />
         <Route exact path="/6" element={<PageSix props={sales[5]} />} />
         <Route exact path="/7" element={<PageBoard/>} />
-        <Route exact path="/8" element={<PageLists/>} />
-        <Route exact path="/9" element={<PageDealDay/>} />
+        {/* <Route exact path="/8" element={<PageLists/>} /> */}
+        <Route exact path="/8" element={<PageDealDay/>} />
       </Routes>
       </>
     );

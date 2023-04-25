@@ -32,12 +32,12 @@ const DealDay = () => {
                             <h3>More than 60 days</h3>
                             <div className="h-100 list-deal deal-1">
                                 <ul>
-                                    {data[3].map((item) => (
-                                        <li key={item.id} className="d-flex justify-content-between">
-                                            <span>{item.title}</span>
-                                            <span>{item.value}</span>
-                                        </li>
-                                    ))}
+                                {data[3].slice(0, 25).map((item) => (
+                                    <li key={item.id} className="d-flex justify-content-between">
+                                        <span>{item.title}</span>
+                                        <span>{item.value}</span>
+                                    </li>
+                                ))}
                                 </ul>
                             </div>
                         </div>
@@ -45,12 +45,12 @@ const DealDay = () => {
                             <h3>More than 35 days</h3>
                             <div className="h-100 list-deal deal-2">
                                 <ul>
-                                    {data[4].map((item) => (
-                                        <li key={item.id} className="d-flex justify-content-between">
-                                            <span>{item.title}</span>
-                                            <span>{item.value}</span>
-                                        </li>
-                                    ))}
+                                {data[4].slice(0, 25).map((item) => (
+                                    <li key={item.id} className="d-flex justify-content-between">
+                                        <span>{item.title}</span>
+                                        <span>{item.value}</span>
+                                    </li>
+                                ))}
                                 </ul>
                             </div>
                         </div>
@@ -58,12 +58,12 @@ const DealDay = () => {
                             <h3>More than 25 days</h3>
                             <div className="h-100 list-deal deal-3">
                                 <ul>
-                                    {data[5].map((item) => (
-                                        <li key={item.id} className="d-flex justify-content-between">
-                                            <span>{item.title}</span>
-                                            <span>{item.value}</span>
-                                        </li>
-                                    ))}
+                                {data[5].slice(0, 25).map((item) => (
+                                    <li key={item.id} className="d-flex justify-content-between">
+                                        <span>{item.title}</span>
+                                        <span>{item.value}</span>
+                                    </li>
+                                ))}
                                 </ul>
                             </div>
                         </div>
