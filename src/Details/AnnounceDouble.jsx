@@ -36,7 +36,7 @@ const AnnounceDouble = (data) => {
                                 <p className="sub-title price">AED {Amount}</p>
                                 <hr />
                                 <p className="upper">Congratulations</p>
-                                <p className="sub-title">{data.Content}</p>
+                                <p className="sub-title">{data.Content.replace(/&nbsp;/g, ' ')}</p>
                             </div>
                         </div>
                     </div>

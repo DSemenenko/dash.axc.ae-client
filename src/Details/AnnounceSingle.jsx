@@ -27,7 +27,7 @@ const AnnounceSingle = ({props}) => {
                                 <p className="sub-title price">AED {Amount}</p>
                                 <hr />
                                 <p className="upper">Congratulations</p>
-                                <p className="sub-title">{props.Content}</p>
+                                <p className="sub-title">{props.Content.replace(/&nbsp;/g, ' ')}</p>
                             </div>
                         </div>
                     </div>
