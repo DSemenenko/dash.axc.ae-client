@@ -2,12 +2,12 @@ import { useEffect, useState, useRef } from 'react';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate} from 'react-router-dom';
 import { io } from 'socket.io-client' 
-import {PageOne, PageTwo, PageThree, PageFour, PageFive, PageSix, PageBoard} from './Pages'
+import {PageOne, PageTwo, PageThree, PageFour, PageFive, PageSix, PageBoard, PageLists, PageDealDay} from './Pages'
 import Header from '../Components/Header'
 
 import { TweenMax, Power3 } from 'gsap';
 
-const socket = io("https://dash.axc.ae/")
+const socket = io("https://dash.axc.ae/")  
 const Loop = () => {
     const [boardData, setBoard] = useState([])
     const[sales, setSales] = useState([null])
@@ -74,7 +74,11 @@ const Loop = () => {
         navigateAndReload('/6');
       } else if (location.pathname === '/6') {
         navigateAndReload('/7');
-      } else {
+      } else if (location.pathname === '/7') {
+        navigateAndReload('/8');
+      } else if (location.pathname === '/8') {
+        navigateAndReload('/9');
+      }else {
         navigateAndReload('/1');
       }
     }, 20000);
@@ -96,6 +100,8 @@ const Loop = () => {
         <Route exact path="/5" element={<PageFive props={sales[4]} />} />
         <Route exact path="/6" element={<PageSix props={sales[5]} />} />
         <Route exact path="/7" element={<PageBoard/>} />
+        <Route exact path="/8" element={<PageLists/>} />
+        <Route exact path="/9" element={<PageDealDay/>} />
       </Routes>
       </>
     );

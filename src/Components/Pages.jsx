@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link, useLocation, useNavigate} from 'react-router-dom';
 import Base from "../Details/Base";
 import Board from "../Details/Board";
+import Lists from "../Details/Lists";
+import DealDay from "../Details/DealDay";
 
 
 const PageOne = ({props}) => {
@@ -62,7 +64,23 @@ const PageOne = ({props}) => {
     );
   };
 
-export {PageOne, PageTwo, PageThree, PageFour, PageFive, PageSix, PageBoard};
+  const PageLists = () => {
+    return(
+      <div>
+        <Lists/>
+      </div>
+    )
+  };
+
+  const PageDealDay = () => {
+    return(
+      <div>
+        <DealDay/>
+      </div>
+    )
+  }
+
+export {PageOne, PageTwo, PageThree, PageFour, PageFive, PageSix, PageBoard, PageLists, PageDealDay};
   
   
   

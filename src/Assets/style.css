@@ -231,7 +231,8 @@ header{
     padding: 30px;
     background: #202124;
     font-family: "Montserrat";
-    height: calc(100vh - 140px);
+    height: calc(100vh - 50px);
+    width: 100%;
 }
 .list-board h3{
     text-align: center;
@@ -276,3 +277,32 @@ body{
     grid-template-columns: 60% 40%;
   }
   .deal-type{font-size: 28px!important;}
+.lists ul {
+    padding: 0;
+    margin: 0;
+}
+.dealday{
+    overflow: hidden;
+}
+.dealday .col-md-4:nth-child(1) h3::after {
+    background: red;
+    height: 6px;
+}
+.dealday .col-md-4:nth-child(2) h3::after {
+    background: yellow;
+    height: 6px;
+}
+.dealday .col-md-4:nth-child(3) h3::after {
+    background: green;
+    height: 6px;
+}
+
+/* .deal-1{
+    background: rgba(255, 0, 0, 0.3);
+}
+.deal-2{
+    background: rgba(255,207,0, 0.3);
+}
+.deal-3{
+    background: #174023;
+} */
