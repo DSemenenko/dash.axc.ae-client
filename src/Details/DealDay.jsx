@@ -27,6 +27,11 @@ const DealDay = () => {
         <div className="container-fluid">
             <div className="height-board align-items-center">
                 <div className="card list-board">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h3 className="title">DAYS SINCE LAST DEAL - OFF-PLAN</h3>
+                        </div>
+                    </div>
                     <div className="row lists h-100 dealday">
                         <div className="col-md-4">
                             <h3>More than 60 days</h3>

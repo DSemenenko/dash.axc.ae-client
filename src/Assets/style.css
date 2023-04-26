@@ -306,3 +306,11 @@ body{
 .deal-3{
     background: #174023;
 } */
+
+
+.list-board h3.title {
+    font-size: 34px;
+}
+.list-board h3.title:after {
+    width: 95%;
+}
