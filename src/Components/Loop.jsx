@@ -2,7 +2,25 @@ import { useEffect, useState, useRef } from 'react';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate} from 'react-router-dom';
 import { io } from 'socket.io-client' 
-import {PageOne, PageTwo, PageThree, PageFour, PageFive, PageSix, PageBoard, PageLists, PageDealDay} from './Pages'
+import {PageOne, 
+  PageTwo, 
+  PageThree, 
+  PageFour, 
+  PageFive, 
+  PageSix, 
+  PageBoard, 
+  PageLists, 
+  PageDealDay, 
+  Top3TotalSalesValueOffPlanPage, 
+  Top3TotalSalesValueSecondaryPage, 
+  RisingStarsOffPlanTeamSecondaryPage,
+  MostValuableManagerOffPlanSecondaryPage,
+  OutstandingContributionSupportPage,
+  HighestTotalRentalValueSecondaryPage,
+  MostRentalTransactionsSecondaryPage,
+  ListingMVPSecondaryPage,
+  PromotionsPage
+  } from './Pages'
 import Header from '../Components/Header'
 
 import { TweenMax, Power3 } from 'gsap';
@@ -76,15 +94,25 @@ const Loop = () => {
         navigateAndReload('/7');
       } else if (location.pathname === '/7') {
         navigateAndReload('/8');
+      } else if (location.pathname === '/8') {
+        navigateAndReload('/9');
+      } else if (location.pathname === '/9') {
+        navigateAndReload('/11');
+      } else if (location.pathname === '/11') {
+        navigateAndReload('/12');
+      } else if (location.pathname === '/12') {
+        navigateAndReload('/13');
+      } else if (location.pathname === '/13') {
+        navigateAndReload('/14');
       } else {
         navigateAndReload('/1');
       }
-    }, 20000);
+    }, 23000);
 
     
   
     if(!sales[0]){
-      return <>Loading...</>
+      return <><div style={{color: "#000"}}>Loading...</div></>
     }
     
   
@@ -92,14 +120,25 @@ const Loop = () => {
       <>
       <Routes>
         <Route exact path="/1" element={<PageOne props={sales[0]} />} />
-        <Route exact path="/2" element={<PageTwo props={sales[1]}  />} />
-        <Route exact path="/3" element={<PageThree props={sales[2]} />} />
-        <Route exact path="/4" element={<PageFour props={sales[3]} />} />
-        <Route exact path="/5" element={<PageFive props={sales[4]} />} />
-        <Route exact path="/6" element={<PageSix props={sales[5]} />} />
-        <Route exact path="/7" element={<PageBoard/>} />
+        <Route exact path="/3" element={<PageTwo props={sales[1]}  />} />
+        <Route exact path="/5" element={<PageThree props={sales[2]} />} />
+        <Route exact path="/7" element={<PageFour props={sales[3]} />} />
+        <Route exact path="/9" element={<PageFive props={sales[4]} />} />
+        <Route exact path="/11" element={<PageSix props={sales[5]} />} />
+        <Route exact path="/13" element={<PageBoard/>} />
         {/* <Route exact path="/8" element={<PageLists/>} /> */}
-        <Route exact path="/8" element={<PageDealDay/>} />
+        <Route exact path="/14" element={<PageDealDay/>} />
+
+
+
+        <Route exact path="/2" element={<Top3TotalSalesValueSecondaryPage/>} />
+        <Route exact path="/4" element={<RisingStarsOffPlanTeamSecondaryPage/>} />
+        <Route exact path="/6" element={<MostValuableManagerOffPlanSecondaryPage/>} />
+        {/* <Route exact path="/13" element={<OutstandingContributionSupportPage/>} /> */}
+        <Route exact path="/8" element={<HighestTotalRentalValueSecondaryPage/>} />
+        {/* <Route exact path="/15" element={<MostRentalTransactionsSecondaryPage/>} /> */}
+        <Route exact path="/10" element={<ListingMVPSecondaryPage/>} />
+        <Route exact path="/12" element={<PromotionsPage/>} />
       </Routes>
       </>
     );
