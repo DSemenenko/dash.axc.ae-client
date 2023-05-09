@@ -105,6 +105,10 @@ const Loop = () => {
         navigateAndReload('/13');
       } else if (location.pathname === '/13') {
         navigateAndReload('/14');
+      } else if (location.pathname === '/14') {
+        navigateAndReload('/15');
+      } else if (location.pathname === '/15') {
+        navigateAndReload('/16');
       } else {
         navigateAndReload('/1');
       }
