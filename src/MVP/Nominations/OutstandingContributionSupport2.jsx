@@ -55,7 +55,7 @@ const OutstandingContributionSupport2 = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/488/488170d6e3f50afd1e1b136f749ed355/photo_2022-10-10_13-13-09.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/bf3/bf3ad6c5b6d9c48965417752eb59db90/Laeticia+Noronha.JPG" alt="" />
                                         </div>
                                         <div className="mvp-body">
                                             <h3>Laeticia Noronha</h3>
