@@ -16,6 +16,7 @@ import {PageOne,
   RisingStarsOffPlanTeamSecondaryPage,
   MostValuableManagerOffPlanSecondaryPage,
   OutstandingContributionSupportPage,
+  OutstandingContributionSupport2Page,
   HighestTotalRentalValueSecondaryPage,
   MostRentalTransactionsSecondaryPage,
   ListingMVPSecondaryPage,
@@ -127,18 +128,18 @@ const Loop = () => {
         <Route exact path="/11" element={<PageSix props={sales[5]} />} />
         <Route exact path="/13" element={<PageBoard/>} />
         {/* <Route exact path="/8" element={<PageLists/>} /> */}
-        <Route exact path="/14" element={<PageDealDay/>} />
+        <Route exact path="/15" element={<PageDealDay/>} />
 
 
 
         <Route exact path="/2" element={<Top3TotalSalesValueSecondaryPage/>} />
         <Route exact path="/4" element={<RisingStarsOffPlanTeamSecondaryPage/>} />
         <Route exact path="/6" element={<MostValuableManagerOffPlanSecondaryPage/>} />
-        {/* <Route exact path="/13" element={<OutstandingContributionSupportPage/>} /> */}
         <Route exact path="/8" element={<HighestTotalRentalValueSecondaryPage/>} />
-        {/* <Route exact path="/15" element={<MostRentalTransactionsSecondaryPage/>} /> */}
         <Route exact path="/10" element={<ListingMVPSecondaryPage/>} />
         <Route exact path="/12" element={<PromotionsPage/>} />
+        <Route exact path="/14" element={<OutstandingContributionSupportPage/>} />
+        <Route exact path="/16" element={<OutstandingContributionSupport2Page/>} />
       </Routes>
       </>
     );

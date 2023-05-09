@@ -11,10 +11,10 @@ const OutstandingContributionSupport2 = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/6de/6def1839fcecf1aff0e28526681dd582/20220816_160334404_i.png" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/7af/7af2a9a036230ccc845ea0d9677013c6/photo1645109294.jpeg" alt="" />
                                         </div>
                                         <div className="mvp-body">
-                                            <h3>El Mehdi Ennahhal</h3>
+                                            <h3>Jamaica Deri</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@ const OutstandingContributionSupport2 = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/df4/df43eb98dfeb64a734cdcb611225f139/photo_2022-06-15_21-25-50.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/859/8595bc2340fd7292a8f43c0db16bfdf4/maria.jpg" alt="" />
                                         </div>
                                         <div className="mvp-body">
                                             <h3>Maria Mahroose</h3>
@@ -44,10 +44,10 @@ const OutstandingContributionSupport2 = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/c0d/c0d07cfeb8f3dc1b0fbdf0b0a400828f/photo_2022-08-24_13-32-22.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/d76/d765af99081c6f705ba05a0bc0ca55b3/photo1667367412.jpeg" alt="" />
                                         </div>
                                         <div className="mvp-body">
-                                            <h3>Majed Abbas</h3>
+                                            <h3>Chloe O`Sullivan</h3>
                                         </div>
                                     </div>
                                 </div>

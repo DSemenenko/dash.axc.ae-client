@@ -22,10 +22,10 @@ const OutstandingContributionSupport = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/ea1/ea10255ab03fabc69d7d07feb89c6130/photo_2022-02-17_18-20-30.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/eea/eeab47df60216da3eb8af890bc51cc15/photo_2022-08-10_16-36-06.jpg" alt="" />
                                         </div>
                                         <div className="mvp-body">
-                                            <h3>Sonu Sukumaran</h3>
+                                            <h3>David Semenenko</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -33,10 +33,10 @@ const OutstandingContributionSupport = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/859/8595bc2340fd7292a8f43c0db16bfdf4/maria.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/fb1/fb13ade12851aa95873373084d6bad18/photo1664866450+_1_.jpeg" alt="" />
                                         </div>
                                         <div className="mvp-body">
-                                            <h3>Maria Mahroose</h3>
+                                            <h3>Jovana Jovic</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -44,10 +44,10 @@ const OutstandingContributionSupport = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/bca/bca83440627244a31c7bd3c0f79871eb/Majed+Abbas.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/89d/89d3cbb302d0818b0ab35fb42e2826ea/photo_2022-08-18_14-38-09.jpg" alt="" />
                                         </div>
                                         <div className="mvp-body">
-                                            <h3>Majed Abbas</h3>
+                                            <h3>Kirill Kustov</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -55,10 +55,10 @@ const OutstandingContributionSupport = () => {
                                 <div className="item">
                                     <div className="card-mvp">
                                         <div className="img-mvp">
-                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/488/488170d6e3f50afd1e1b136f749ed355/photo_2022-10-10_13-13-09.jpg" alt="" />
+                                            <img src="https://upload-5b6ed3f1470f864e3426fe4c1fe063ed.s3.amazonaws.com/main/bca/bca83440627244a31c7bd3c0f79871eb/Majed+Abbas.jpg" alt="" />
                                         </div>
                                         <div className="mvp-body">
-                                            <h3>Laeticia Noronha</h3>
+                                            <h3>Majed Abbas</h3>
                                         </div>
                                     </div>
                                 </div>

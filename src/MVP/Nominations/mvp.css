@@ -32,8 +32,18 @@
 .eight-img-mvp-block, .four-img-mvp-block{
     grid-template-columns: auto auto auto auto;
 }
-.five-img-mvp-block, .four-img-mvp-block{
-    grid-template-columns: auto auto auto auto auto;
+.five-img-mvp-block{
+    grid-template-columns: repeat(5, 1fr);
+}
+.four-img-mvp-block{
+    grid-template-columns: repeat(4, 1fr);
+}
+.five-img-mvp-block .img-mvp {
+    height: 300px;
+    overflow: hidden;
+}
+.five-img-mvp-block .mvp-body h3 {
+    font-size: 30px;
 }
 .mvp-screen{
     width: 95vw;
