@@ -9,6 +9,7 @@ import {PageOne,
   PageFive, 
   PageSix, 
   PageBoard, 
+  PageReview,
   PageLists, 
   PageDealDay, 
   Top3TotalSalesValueOffPlanPage, 
@@ -20,7 +21,8 @@ import {PageOne,
   HighestTotalRentalValueSecondaryPage,
   MostRentalTransactionsSecondaryPage,
   ListingMVPSecondaryPage,
-  PromotionsPage
+  PromotionsPage,
+  PageTarget
   } from './Pages'
 import Header from '../Components/Header'
 
@@ -79,27 +81,31 @@ const Loop = () => {
     
   
     // }, 5000000);
-
-    setInterval(() => {
-        if (location.pathname === '/1') {
-        navigateAndReload('/2');
-      } else if (location.pathname === '/2') {
-        navigateAndReload('/3');
-      } else if (location.pathname === '/3') {
-        navigateAndReload('/4');
-      } else if (location.pathname === '/4') {
-        navigateAndReload('/5');
-      } else if (location.pathname === '/5') {
-        navigateAndReload('/6');
-      } else if (location.pathname === '/6') {
-        navigateAndReload('/7');
-      } else if (location.pathname === '/7') {
-        navigateAndReload('/8');
-      } else {
+    if(location.pathname === '/9'){
+      setInterval(() => {
         navigateAndReload('/1');
-      }
-    }, 23000);
-
+      }, 50000000)
+    } else {
+      setInterval(() => {
+          if (location.pathname === '/1') {
+          navigateAndReload('/2');
+        } else if (location.pathname === '/2') {
+          navigateAndReload('/3');
+        } else if (location.pathname === '/3') {
+          navigateAndReload('/4');
+        } else if (location.pathname === '/4') {
+          navigateAndReload('/5');
+        } else if (location.pathname === '/5') {
+          navigateAndReload('/6');
+        } else if (location.pathname === '/6') {
+          navigateAndReload('/7');
+        } else if (location.pathname === '/7') {
+          navigateAndReload('/8');
+        } else {
+          navigateAndReload('/1');
+        }
+      }, 23000);
+    }
     
   
     if(!sales[0]){
@@ -119,6 +125,8 @@ const Loop = () => {
         <Route exact path="/7" element={<PageBoard/>} />
         {/* <Route exact path="/8" element={<PageLists/>} /> */}
         <Route exact path="/8" element={<PageDealDay/>} />
+        <Route exact path="/9" element={<PageTarget/>}/>
+        <Route exact path="/10" element={<PageReview/>}/>
 
 
 

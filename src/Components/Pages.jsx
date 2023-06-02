@@ -4,6 +4,8 @@ import Base from "../Details/Base";
 import Board from "../Details/Board";
 import Lists from "../Details/Lists";
 import DealDay from "../Details/DealDay";
+import Review from "../Details/Review";
+import Target from "../Details/Target";
 
 import Firework from "../MVP/Firework";
 import Top3TotalSalesValueOffPlan from "../MVP/Nominations/Top3TotalSalesValueOffPlan"
@@ -89,6 +91,21 @@ const PageOne = ({props}) => {
     return(
       <div>
         <DealDay/>
+      </div>
+    )
+  }
+  
+  const PageReview = () => {
+    return(
+      <div>
+        <Review/>
+      </div>
+    )
+  }
+  const PageTarget = () => {
+    return(
+      <div>
+        <Target/>
       </div>
     )
   }
@@ -190,6 +207,8 @@ const PageOne = ({props}) => {
     PageFive, 
     PageSix, 
     PageBoard, 
+    PageReview,
+    PageTarget,
     PageLists, 
     PageDealDay, 
     Top3TotalSalesValueOffPlanPage, 

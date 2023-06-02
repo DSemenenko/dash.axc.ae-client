@@ -23,6 +23,7 @@ const DoughnutComponent = (props) => {
   const currentm = meter.meter 
   const meterresult = goal - currentm
   
+  console.log(meter)
 
 
 
@@ -117,7 +118,7 @@ const DoughnutComponent = (props) => {
       
     return <>
        <div className='goal-block'>
-        <p>Next goal 1.4 B</p>
+        <p>Next goal 1.8 B</p>
         <Doughnut data={data} options={config} plugins ={ [gaugeText] }/>
        </div>
        {/* <div class="chartCard">
