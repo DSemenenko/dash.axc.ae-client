@@ -84,7 +84,7 @@ const Loop = () => {
     if(location.pathname === '/9'){
       setInterval(() => {
         navigateAndReload('/1');
-      }, 50000000)
+      }, 23000)
     } else {
       setInterval(() => {
           if (location.pathname === '/1') {
@@ -107,6 +107,25 @@ const Loop = () => {
       }, 23000);
     }
     
+
+    setInterval(() => {
+      if (location.pathname === '/concorde/1') {
+      navigateAndReload('/concorde/2');
+    } else if (location.pathname === '/concorde/2') {
+      navigateAndReload('/concorde/3');
+    } else if (location.pathname === '/concorde/3') {
+      navigateAndReload('/concorde/4');
+    } else if (location.pathname === '/concorde/4') {
+      navigateAndReload('/concorde/5');
+    } else if (location.pathname === '/concorde/5') {
+      navigateAndReload('/concorde/6');
+    } else if (location.pathname === '/concorde/6') {
+      navigateAndReload('/concorde/7');
+    } else {
+      navigateAndReload('/concorde/1');
+    }
+  }, 23000);
+
   
     if(!sales[0]){
       return <><div style={{color: "#000"}}>Loading...</div></>
@@ -123,12 +142,20 @@ const Loop = () => {
         <Route exact path="/5" element={<PageFive props={sales[4]} />} />
         <Route exact path="/6" element={<PageSix props={sales[5]} />} />
         <Route exact path="/7" element={<PageBoard/>} />
+        
         {/* <Route exact path="/8" element={<PageLists/>} /> */}
         <Route exact path="/8" element={<PageDealDay/>} />
         <Route exact path="/9" element={<PageTarget/>}/>
         <Route exact path="/10" element={<PageReview/>}/>
 
 
+        <Route exact path="/concorde/1" element={<PageOne props={sales[0]} />} />
+        <Route exact path="/concorde/2" element={<PageTwo props={sales[1]}  />} />
+        <Route exact path="/concorde/3" element={<PageThree props={sales[2]} />} />
+        <Route exact path="/concorde/4" element={<PageFour props={sales[3]} />} />
+        <Route exact path="/concorde/5" element={<PageFive props={sales[4]} />} />
+        <Route exact path="/concorde/6" element={<PageSix props={sales[5]} />} />
+        <Route exact path="/concorde/7" element={<PageBoard/>} />
 
         {/* <Route exact path="/2" element={<Top3TotalSalesValueSecondaryPage/>} />
         <Route exact path="/4" element={<RisingStarsOffPlanTeamSecondaryPage/>} />
