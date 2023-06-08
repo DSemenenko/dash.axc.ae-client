@@ -78,33 +78,37 @@ const Loop = () => {
     }
 
     useEffect(() => {
+      const pathMap = {
+        '/1': '/2',
+        '/2': '/3',
+        '/3': '/4',
+        '/4': '/5',
+        '/5': '/6',
+        '/6': '/7',
+        '/7': '/8',
+        '/8': '/1',
+        '/concorde/1': '/concorde/2',
+        '/concorde/2': '/concorde/3',
+        '/concorde/3': '/concorde/4',
+        '/concorde/4': '/concorde/5',
+        '/concorde/5': '/concorde/6',
+        '/concorde/6': '/concorde/7',
+        '/concorde/7': '/concorde/8',
+        '/concorde/8': '/concorde/1',
+      };
+      
+      const intervalTime = window.location.pathname === '/concorde/8' ? 50000 : 20000;
+      
       const intervalId = setInterval(() => {
-        const pathMap = {
-          '/1': '/2',
-          '/2': '/3',
-          '/3': '/4',
-          '/4': '/5',
-          '/5': '/6',
-          '/6': '/7',
-          '/7': '/8',
-          '/8': '/1',
-          '/concorde/1': '/concorde/2',
-          '/concorde/2': '/concorde/3',
-          '/concorde/3': '/concorde/4',
-          '/concorde/4': '/concorde/5',
-          '/concorde/5': '/concorde/6',
-          '/concorde/6': '/concorde/7',
-          '/concorde/7': '/concorde/1',
-        };
-        
         const newPath = pathMap[window.location.pathname] || '/1';
         navigateAndReload(newPath);
-      }, 23000);
+      }, intervalTime);
     
       return () => {
         clearInterval(intervalId);
       };
-    }, []);    
+    }, []);
+     
 
   
     if(!sales[0]){
@@ -136,6 +140,7 @@ const Loop = () => {
         <Route exact path="/concorde/5" element={<PageFive props={sales[4]} />} />
         <Route exact path="/concorde/6" element={<PageSix props={sales[5]} />} />
         <Route exact path="/concorde/7" element={<PageBoard/>} />
+        <Route exact path="/concorde/8" element={<PageReview/>} />
 
         {/* <Route exact path="/2" element={<Top3TotalSalesValueSecondaryPage/>} />
         <Route exact path="/4" element={<RisingStarsOffPlanTeamSecondaryPage/>} />

@@ -1,4 +1,10 @@
-
+.body-review{
+    background-color: #000;
+    /*  background-image: linear-gradient(147deg, #000 0%, #372921 74%);*/
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+}
 .blog-slider {
   width: 95%;
   position: relative;
@@ -177,6 +183,7 @@
   color: #fff;
   margin-bottom: 30px;
   line-height: 1.5em;
+  font-size: 20px;
 }
 .blog-slider__button {
   display: inline-flex;
@@ -255,9 +262,9 @@
 
 
 .logo-review{
-  display: block;
+  display: flex;
   position: absolute;
-  width: 230px;
+  width: 70vw;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -291,12 +298,12 @@
 
 .google-section h3{
   color: #bdc1c6;
-  font-size: 32px;
+  font-size: 38px;
   margin: 10px 0;
 }
 .google-section p{
   color: #9aa0a6;
-  font-size: 18px;
+  font-size: 22px;
 }
 .google-section ul li{
   list-style: none;
@@ -323,10 +330,18 @@
 }
 .google-section .rate h5{
   color: #9aa0a6;
-  font-size: 32px;
+  font-size: 48px;
   margin: 0 11px 0 0;
   font-feature-settings: "pnum" on,"lnum" on;
 }
 .swiper-wrapper {
     height: 70%;
+}
+
+.logo-review svg {
+    max-width: 260px;
+}
+.logo-review h1{
+    color: #fff;
+    margin-left: 50px;
 }
