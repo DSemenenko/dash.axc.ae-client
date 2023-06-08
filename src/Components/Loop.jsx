@@ -76,55 +76,35 @@ const Loop = () => {
     const navigateAndReload = async (path) => {
       window.location.replace(path)
     }
-    
-    // useEffect(() => {
-    
-  
-    // }, 5000000);
-    if(location.pathname === '/9'){
-      setInterval(() => {
-        navigateAndReload('/1');
-      }, 23000)
-    } else {
-      setInterval(() => {
-          if (location.pathname === '/1') {
-          navigateAndReload('/2');
-        } else if (location.pathname === '/2') {
-          navigateAndReload('/3');
-        } else if (location.pathname === '/3') {
-          navigateAndReload('/4');
-        } else if (location.pathname === '/4') {
-          navigateAndReload('/5');
-        } else if (location.pathname === '/5') {
-          navigateAndReload('/6');
-        } else if (location.pathname === '/6') {
-          navigateAndReload('/7');
-        } else if (location.pathname === '/7') {
-          navigateAndReload('/8');
-        } else {
-          navigateAndReload('/1');
-        }
-      }, 23000);
-    }
-    
 
-    setInterval(() => {
-      if (location.pathname === '/concorde/1') {
-      navigateAndReload('/concorde/2');
-    } else if (location.pathname === '/concorde/2') {
-      navigateAndReload('/concorde/3');
-    } else if (location.pathname === '/concorde/3') {
-      navigateAndReload('/concorde/4');
-    } else if (location.pathname === '/concorde/4') {
-      navigateAndReload('/concorde/5');
-    } else if (location.pathname === '/concorde/5') {
-      navigateAndReload('/concorde/6');
-    } else if (location.pathname === '/concorde/6') {
-      navigateAndReload('/concorde/7');
-    } else {
-      navigateAndReload('/concorde/1');
-    }
-  }, 23000);
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        const pathMap = {
+          '/1': '/2',
+          '/2': '/3',
+          '/3': '/4',
+          '/4': '/5',
+          '/5': '/6',
+          '/6': '/7',
+          '/7': '/8',
+          '/8': '/1',
+          '/concorde/1': '/concorde/2',
+          '/concorde/2': '/concorde/3',
+          '/concorde/3': '/concorde/4',
+          '/concorde/4': '/concorde/5',
+          '/concorde/5': '/concorde/6',
+          '/concorde/6': '/concorde/7',
+          '/concorde/7': '/concorde/1',
+        };
+        
+        const newPath = pathMap[window.location.pathname] || '/1';
+        navigateAndReload(newPath);
+      }, 23000);
+    
+      return () => {
+        clearInterval(intervalId);
+      };
+    }, []);    
 
   
     if(!sales[0]){
