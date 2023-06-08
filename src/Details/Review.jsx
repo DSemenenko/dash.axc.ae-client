@@ -1,4 +1,4 @@
-import '../Assets/review.css'
+
 const Review = () => {
     return <>
         <div class="logo-review">
