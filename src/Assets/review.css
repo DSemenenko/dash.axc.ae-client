@@ -268,7 +268,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 10%;
+  top: 5%;
 }
 .stars i{
   color: #f7b707;
@@ -344,4 +344,5 @@
 .logo-review h1{
     color: #fff;
     margin-left: 50px;
+    font-size: 60px;
   }

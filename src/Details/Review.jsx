@@ -28,7 +28,7 @@ const Review = () => {
             <div class="blog-slider">
                 <div class="google-section">
                     <h3>AX CAPITAL Dubai</h3>
-                    <p>Business Bay Office Tower | Dubai Media City Concord Tower </p>
+                    <p>Business Bay Office Tower - 14th Floor Westburry - Marasi Dr - Dubai</p>
                     <div class="rate">
                     <h5>4.8</h5>
                     <ul>
