@@ -4,7 +4,7 @@ const DealDay = () => {
     const[data, setData] = useState();
     
     async function fetchlists() {
-        const response = await fetch("https://dash.axc.ae/requests/get-lists");
+        const response = await fetch("https://dash.axc.ae/requests/get-lists"); 
         const jsonData = await response.json()
 
         const parseData = jsonData.map(item => JSON.parse(item.data))

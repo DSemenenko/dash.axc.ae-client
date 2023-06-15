@@ -97,7 +97,7 @@ const Loop = () => {
         '/concorde/8': '/concorde/1',
       };
       
-      const intervalTime = window.location.pathname === '/concorde/8' ? 50000 : 20000;
+      const intervalTime = window.location.pathname === '/9' ? 50000 : 20000;
       
       const intervalId = setInterval(() => {
         const newPath = pathMap[window.location.pathname] || '/1';
@@ -129,18 +129,18 @@ const Loop = () => {
         
         {/* <Route exact path="/8" element={<PageLists/>} /> */}
         <Route exact path="/8" element={<PageDealDay/>} />
-        <Route exact path="/9" element={<PageTarget/>}/>
-        <Route exact path="/10" element={<PageReview/>}/>
+        {/* <Route exact path="/9" element={<PageTarget/>}/> */}
+        <Route exact path="/9" element={<PageReview/>}/>
 
 
-        <Route exact path="/concorde/1" element={<PageOne props={sales[0]} />} />
+        {/* <Route exact path="/concorde/1" element={<PageOne props={sales[0]} />} />
         <Route exact path="/concorde/2" element={<PageTwo props={sales[1]}  />} />
         <Route exact path="/concorde/3" element={<PageThree props={sales[2]} />} />
         <Route exact path="/concorde/4" element={<PageFour props={sales[3]} />} />
         <Route exact path="/concorde/5" element={<PageFive props={sales[4]} />} />
         <Route exact path="/concorde/6" element={<PageSix props={sales[5]} />} />
         <Route exact path="/concorde/7" element={<PageBoard/>} />
-        <Route exact path="/concorde/8" element={<PageReview/>} />
+        <Route exact path="/concorde/8" element={<PageReview/>} /> */}
 
         {/* <Route exact path="/2" element={<Top3TotalSalesValueSecondaryPage/>} />
         <Route exact path="/4" element={<RisingStarsOffPlanTeamSecondaryPage/>} />

@@ -319,6 +319,9 @@ body{
 .logo svg{
     width: 100%;
 }
+.target{
+    text-align: center;
+}
 .target .text{
     font-family: 'Raleway';
 }
