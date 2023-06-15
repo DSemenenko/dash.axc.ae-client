@@ -86,15 +86,8 @@ const Loop = () => {
         '/5': '/6',
         '/6': '/7',
         '/7': '/8',
-        '/8': '/1',
-        '/concorde/1': '/concorde/2',
-        '/concorde/2': '/concorde/3',
-        '/concorde/3': '/concorde/4',
-        '/concorde/4': '/concorde/5',
-        '/concorde/5': '/concorde/6',
-        '/concorde/6': '/concorde/7',
-        '/concorde/7': '/concorde/8',
-        '/concorde/8': '/concorde/1',
+        '/8': '/9',
+        '/9': '/1',
       };
       
       const intervalTime = window.location.pathname === '/9' ? 50000 : 20000;
